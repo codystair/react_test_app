@@ -30,8 +30,8 @@ jobs:
         uses: actions/checkout@v1
       - name: Setup React
         run: npm install
-      - name: Clean out directory
-        run: rm -rf public
+      # - name: Clean out directory
+      #   run: rm -rf public
       - name: Build
         run: npm run build
       - uses: aws-actions/configure-aws-credentials@v1
